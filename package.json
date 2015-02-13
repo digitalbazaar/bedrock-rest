@@ -27,7 +27,6 @@
   },
   "peerDependencies": {
     "bedrock": "~0.3.0",
-    "bedrock-identity": "~0.0.1",
     "bedrock-validation": "~0.0.1",
     "bedrock-views": "~0.0.1"
   },
