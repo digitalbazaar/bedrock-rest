@@ -1,5 +1,4 @@
 # bedrock-rest
-Bedrock REST support
 
 A [bedrock][] module that adds helpers for REST support.
 
