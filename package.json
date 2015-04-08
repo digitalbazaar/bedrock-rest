@@ -1,6 +1,6 @@
 {
   "name": "bedrock-rest",
-  "version": "0.1.1-dev",
+  "version": "1.0.0",
   "description": "Bedrock REST support",
   "main": "./lib/rest",
   "scripts": {
@@ -26,9 +26,9 @@
     "async": "~0.9.0"
   },
   "peerDependencies": {
-    "bedrock": "~0.3.0",
-    "bedrock-validation": "~0.1.0",
-    "bedrock-views": "~0.1.0"
+    "bedrock": "^1.0.0",
+    "bedrock-validation": "^1.0.0",
+    "bedrock-views": "^1.0.0"
   },
   "directories": {
     "lib": "./lib"
