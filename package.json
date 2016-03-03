@@ -1,6 +1,6 @@
 {
   "name": "bedrock-rest",
-  "version": "2.0.0",
+  "version": "2.0.1-dev",
   "description": "Bedrock REST support",
   "main": "./lib/rest",
   "scripts": {
