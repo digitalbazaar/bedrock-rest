@@ -1,6 +1,6 @@
 {
   "name": "bedrock-rest",
-  "version": "1.1.1-dev",
+  "version": "2.0.0-dev",
   "description": "Bedrock REST support",
   "main": "./lib/rest",
   "scripts": {
@@ -23,12 +23,15 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-rest",
   "dependencies": {
-    "async": "^1.4.2"
+    "async": "^1.4.2",
+    "bedrock": "^1.0.0",
+    "bedrock-validation": "^2.0.0",
+    "bedrock-views": "^2.0.0"
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
-    "bedrock-validation": "^1.0.0",
-    "bedrock-views": "^1.0.0"
+    "bedrock-validation": "^2.0.0",
+    "bedrock-views": "^2.0.0"
   },
   "directories": {
     "lib": "./lib"

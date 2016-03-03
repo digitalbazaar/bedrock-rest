@@ -2,6 +2,10 @@
 
 A [bedrock][] module that adds helpers for REST support.
 
+## Requirements
+
+- npm v3+
+
 ## Quick Examples
 
 ```
