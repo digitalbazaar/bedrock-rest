@@ -23,15 +23,12 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-rest",
   "dependencies": {
-    "async": "^1.4.2",
-    "bedrock": "^1.0.0",
-    "bedrock-validation": "^2.0.0",
-    "bedrock-views": "^2.0.0"
+    "async": "^1.4.2"
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
     "bedrock-validation": "^2.0.0",
-    "bedrock-views": "^2.0.0"
+    "bedrock-views": "^4.0.0"
   },
   "directories": {
     "lib": "./lib"
