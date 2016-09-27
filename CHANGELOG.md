@@ -1,6 +1,8 @@
 # bedrock-rest ChangeLog
 
-## [Unreleased]
+### Fixed
+- If `application/ld+json`, `application/json` are not preferred
+  over `text/html` return false from `prefers`.
 
 ## [2.0.1] - 2016-03-15
 
