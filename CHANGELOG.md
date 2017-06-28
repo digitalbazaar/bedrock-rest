@@ -1,5 +1,10 @@
 # bedrock-rest ChangeLog
 
+## 2.1.0 - 2017-06-27
+
+### Changed
+- Update `bedrock-views` dependency from 4.x to 5.x.
+
 ## 2.0.2 - 2016-09-28
 
 ### Fixed
