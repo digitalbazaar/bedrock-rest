@@ -1,5 +1,10 @@
 # bedrock-rest ChangeLog
 
+## 2.1.1 - 2018-09-20
+
+### Changed
+- Update bedrock-validation peer dependency.
+
 ## 2.1.0 - 2017-06-27
 
 ### Changed
