@@ -1,5 +1,10 @@
 # bedrock-rest ChangeLog
 
+## 2.1.2 - 2018-09-20
+
+### Fixed
+- Fix typo in peer dependencies.
+
 ## 2.1.1 - 2018-09-20
 
 ### Changed
