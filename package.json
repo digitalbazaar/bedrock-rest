@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
-    "bedrock-validation": "2.x - 3.x",
+    "bedrock-validation": "2.x - 4.x",
     "bedrock-views": "^5.0.0"
   },
   "directories": {
