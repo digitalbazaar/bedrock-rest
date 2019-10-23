@@ -1,7 +1,23 @@
 # bedrock-rest ChangeLog
 
+## 3.0.0 - 2019-xx-xx
+
 ### Added
 - eslint support.
+
+### Changed
+- **BREAKING**: `makeResourceHandler` options changed.
+  - No longer takes template related options in favor of routing to next
+    middleware.
+  - Added `json` option to turn on/off JSON processing or route to next
+    middleware.
+  - Added `html` option to turn off HTML processing or route to next
+    middleware.
+- Code modernization and improvements.
+- Reuse `makeResourceHandler` for `linkedDataHandler` implementation.
+
+### Removed
+- `bedrock-views` dependency due to no longer needing view vars feature.
 
 ## 2.1.3 - 2019-03-26
 

@@ -28,8 +28,7 @@
   },
   "peerDependencies": {
     "bedrock": "^1.0.0",
-    "bedrock-validation": "2.x - 4.x",
-    "bedrock-views": "^5.0.0"
+    "bedrock-validation": "2.x - 4.x"
   },
   "directories": {
     "lib": "./lib"
@@ -37,5 +36,8 @@
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-digitalbazaar": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
