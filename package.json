@@ -4,7 +4,8 @@
   "description": "Bedrock REST support",
   "main": "lib",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "eslint 'lib/*.js'"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,9 @@
   },
   "directories": {
     "lib": "./lib"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-digitalbazaar": "^2.0.1"
   }
 }

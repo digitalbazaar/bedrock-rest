@@ -1,5 +1,8 @@
 # bedrock-rest ChangeLog
 
+### Added
+- eslint support.
+
 ## 2.1.3 - 2019-03-26
 
 ### Changed
