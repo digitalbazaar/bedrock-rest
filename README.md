@@ -60,12 +60,6 @@ function addRoutes(app) {
         myItems.getItem({id: itemId}, function(err, item) {
           callback(err, item);
         });
-      },
-      template: 'item.html',
-      templateNeedsResource: true,
-      updateVars: function(resource, vars, callback) {
-        vars.item = resource;
-        callback();
       }
     }));
 }
@@ -94,17 +88,15 @@ bedrock.events.on('bedrock-express.init', function(app) {
 Make middleware for a type negotiated REST resource. This middleware handles
 the details of handling requests for `json`, `application/ld+json`, and
 `html`. JSON based requests will just return the data from the `get` option.
-HTML requests will return a HTML template as needed. It defaults to
-`main.html` which could be setup to start a single page app that could
-include the data with `updateVars` or re-call the resource URL and request
-JSON based data.
+HTML requests default to using another route to return HTML. It defaults to
+`main.html` which could be setup to start a single page app that calls the
+same endpoint to get the JSON based resource.
 
 `options`:
 - **validate**: content to pass to bedrock.validation.validate
 - **get(req, res, callback(err, data))**: get resource data
-- **template**: template file name for HTML mode (default: 'main.html')
-- **templateNeedsResource**: boolean flag to get resource for template
-- **updateVars(resource, vars, callback(err))**: update vars with resource
+- **json**: handle JSON content types (false, true, 'route') (default: true)
+- **html**: handle HTML content types (false, 'route') (default: 'route')
 
 ```js
 makeResourceHandler({
@@ -115,15 +107,21 @@ makeResourceHandler({
       }
       callback(null, resource);
     }
-  },
-  template: 'my-template.html',
-  templateNeedsResource: true,
-  updateVars = function(resource, vars, callback) {
-    vars.resource = resource;
-    callback();
   }
 });
 ```
+
+### linkedDataHandler(options)
+
+Alias for makeResourceHandler.
+
+### when.prefers.jsonld
+
+Middleware to check if request prefers JSON-LD
+
+### when.prefers.ld
+
+Middleware to check if request prefers linked data.
 
 [bedrock]: https://github.com/digitalbazaar/bedrock
 [bedrock-express]: https://github.com/digitalbazaar/bedrock-express
