@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-rest",
   "peerDependencies": {
-    "bedrock": "^1.0.0",
+    "bedrock": "1.x - 3.x",
     "bedrock-validation": "2.x - 4.x"
   },
   "directories": {
